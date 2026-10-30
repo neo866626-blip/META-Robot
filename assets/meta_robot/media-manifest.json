@@ -1,0 +1,43 @@
+{
+  "source_filename": "META_Robot_new_version.mp4",
+  "source_sha256": "9ca3e0eeb8e933079c18466d86830d4953406bc5a2f55f38b2bddcdbd00db103",
+  "segments": [
+    {
+      "id": "instruction-following",
+      "start_seconds": 2,
+      "duration_seconds": 11,
+      "poster_seconds": 7
+    },
+    {
+      "id": "long-horizon",
+      "start_seconds": 17,
+      "duration_seconds": 11,
+      "poster_seconds": 24
+    },
+    {
+      "id": "ordered-stacking",
+      "start_seconds": 32,
+      "duration_seconds": 16,
+      "poster_seconds": 43
+    },
+    {
+      "id": "towel-folding",
+      "start_seconds": 52,
+      "duration_seconds": 11,
+      "poster_seconds": 57
+    },
+    {
+      "id": "torque-identification",
+      "start_seconds": 73,
+      "duration_seconds": 30,
+      "poster_seconds": 91
+    },
+    {
+      "id": "precision-insertion",
+      "start_seconds": 108,
+      "duration_seconds": 7.5,
+      "poster_seconds": 112
+    }
+  ],
+  "processing": "H.264 video excerpts, silent looping GIF previews; original ordering preserved. Full video retains audio."
+}

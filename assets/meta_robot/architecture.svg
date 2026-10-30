@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+<title id="title">META-Robot architecture</title><desc id="desc">Action-level predicate transitions couple self cognition with capability scaling through an evidence-grounded execution loop and shared predicate and skill libraries.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#172b3c"/></linearGradient><linearGradient id="accent"><stop stop-color="#66e2ca"/><stop offset="1" stop-color="#83b9fa"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#66e2ca" stroke-width="1.5"/></marker></defs>
+<rect width="1440" height="620" rx="24" fill="url(#bg)"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="72" y="63" fill="#66e2ca" font-size="15" letter-spacing="4">EVIDENCE-GROUNDED ROBOTIC AGENTS</text>
+<text x="72" y="137" fill="#f0f6fc" font-size="64" font-weight="700">META-Robot</text>
+<text x="72" y="178" fill="#b8c9db" font-size="23">Self Cognition and Capability Scaling in Agentic Robots</text>
+<rect x="72" y="219" width="397" height="105" rx="14" fill="#152a38" stroke="#35605f"/>
+<text x="97" y="252" fill="#66e2ca" font-size="15" letter-spacing="1.5">SELF COGNITION</text><text x="97" y="287" fill="#eef4fc" font-size="21">What evidence supports success?</text>
+<rect x="493" y="219" width="397" height="105" rx="14" fill="#192b43" stroke="#375775"/>
+<text x="518" y="252" fill="#8fc0ff" font-size="15" letter-spacing="1.5">CAPABILITY SCALING</text><text x="518" y="287" fill="#eef4fc" font-size="21">Which skill should change?</text>
+<rect x="930" y="72" width="438" height="252" rx="18" fill="#0b1724" stroke="#35485b"/>
+<text x="958" y="109" fill="#c8d8e6" font-size="15" letter-spacing="1.4">COUPLED LIBRARIES</text>
+<rect x="958" y="133" width="172" height="64" rx="11" fill="#21483f"/><text x="1044" y="172" text-anchor="middle" fill="#9af2db" font-size="22">Predicates</text>
+<path d="M1145 164H1179M1145 164l8-5M1145 164l8 5M1179 164l-8-5M1179 164l-8 5" stroke="#7ca6b0" stroke-width="2"/>
+<rect x="1194" y="133" width="145" height="64" rx="11" fill="#253c59"/><text x="1267" y="172" text-anchor="middle" fill="#b9d7ff" font-size="22">Skills</text>
+<text x="958" y="232" fill="#acbfd1" font-size="17">Shared identity · inherited criteria</text>
+<text x="958" y="263" fill="#acbfd1" font-size="17">Reviewed admission · revisioned evidence</text>
+<text x="958" y="294" fill="#acbfd1" font-size="17">Vision + proprioceptive feedback</text>
+<path d="M72 358H1368" stroke="#334455"/>
+<text x="72" y="393" fill="#97adbf" font-size="14" letter-spacing="2.2">ACTION-LEVEL EXECUTION LOOP</text>
+<g fill="#152839" stroke="#385367"><rect x="72" y="416" width="275" height="98" rx="13"/><rect x="413" y="416" width="275" height="98" rx="13"/><rect x="754" y="416" width="275" height="98" rx="13"/><rect x="1095" y="416" width="273" height="98" rx="13"/></g>
+<g fill="#ecf4fd" font-size="23" text-anchor="middle"><text x="209" y="453">Evaluate before</text><text x="550" y="453">Execute &amp; observe</text><text x="891" y="453">Evaluate after</text><text x="1231" y="453">Repair &amp; validate</text></g>
+<g fill="#9db7c9" font-size="16" text-anchor="middle"><text x="209" y="485">Preconditions + invariants</text><text x="550" y="485">Action-aligned physical evidence</text><text x="891" y="485">Predicate state transitions</text><text x="1231" y="485">Bounded local refinement</text></g>
+<g stroke="#66e2ca" stroke-width="2" marker-end="url(#arrow)"><path d="M361 463H397"/><path d="M702 463H738"/><path d="M1043 463H1079"/></g>
+<text x="72" y="567" fill="#83a2b6" font-size="17">Unknown evidence requests observation. Contact alone does not establish a verified grasp.</text>
+</g></svg>

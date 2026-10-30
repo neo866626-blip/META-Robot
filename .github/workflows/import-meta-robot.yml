@@ -1,0 +1,36 @@
+name: Import ASPIRE source history
+on:
+  push:
+    paths:
+      - '.github/workflows/import-meta-robot.yml'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Import pinned upstream and preserve META-Robot files
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_commit=0a36d7a02abad08943f2124146d783fb253677b7
+          git fetch https://github.com/AlanDerp/ASPIRE.git "$source_commit"
+          test "$(git rev-parse FETCH_HEAD)" = "$source_commit"
+          base_commit=$(git rev-parse HEAD)
+          if git merge-base --is-ancestor "$source_commit" "$base_commit"; then
+            exit 0
+          fi
+          overlay_dir=$(mktemp -d)
+          git archive "$base_commit" | tar -x -C "$overlay_dir"
+          git checkout --detach "$source_commit"
+          cp -a "$overlay_dir"/. .
+          rm .github/workflows/import-meta-robot.yml
+          git add -A
+          git config user.name neo866626-blip
+          git config user.email neo866626-blip@users.noreply.github.com
+          imported_tree=$(git write-tree)
+          imported_commit=$(git commit-tree "$imported_tree" -p "$base_commit" -p "$source_commit" -m "Import ASPIRE source and preserve upstream history for META-Robot")
+          git push origin "$imported_commit":refs/heads/main

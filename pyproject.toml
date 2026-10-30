@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meta-robot"
+version = "0.2.0"
+description = "Evidence-grounded action predicates and coupled skill libraries for agentic robots"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "LICENSES/*.txt", "LICENSES/*.md"]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/neo866626-blip/META-Robot"
+
+[project.scripts]
+meta-robot = "meta_robot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["meta_robot*", "aspire", "aspire.sim", "aspire.sim.cap", "aspire.sim.cap.knowledge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
