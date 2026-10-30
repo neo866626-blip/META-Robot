@@ -1,0 +1,160 @@
+{
+  "source": {
+    "filename": "ICLR_2027_Meta_Robot-8.pdf",
+    "sha256": "f7de6c1dd8af49a494bd940e1f2c6adab26f2a77c14da5b05a79e2767fff3f85",
+    "title": "META-Robot: Self Cognition and Capability Scaling in Agentic Robots",
+    "status": "author-supplied manuscript",
+    "main_table": {
+      "table": 1,
+      "page": 7
+    },
+    "predicate_ablation": {
+      "table": 2,
+      "page": 9
+    },
+    "proprioception_ablation": {
+      "section": "4.5.2",
+      "page": 9,
+      "figure": 11
+    }
+  },
+  "metric": "success rate (%)",
+  "evaluation_seeds": 50,
+  "scope_note": "The full-system Spatial–Pos result covers eight available tasks; comparisons across methods and ablations should be interpreted with this coverage difference in mind.",
+  "execution_note": "Reported manuscript results; no benchmark was rerun for this homepage update.",
+  "columns": [
+    "Object–Pos",
+    "Object–Task",
+    "Goal–Pos",
+    "Goal–Task",
+    "Spatial–Pos*",
+    "Spatial–Task"
+  ],
+  "main_results": [
+    {
+      "method": "OpenVLA",
+      "success_rate": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "π₀",
+      "success_rate": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "method": "π₀.₅",
+      "success_rate": [
+        17,
+        1,
+        38,
+        0,
+        20,
+        1
+      ]
+    },
+    {
+      "method": "CaP-Agent0",
+      "success_rate": [
+        22,
+        18,
+        26,
+        17,
+        12,
+        14
+      ]
+    },
+    {
+      "method": "ASPIRE",
+      "success_rate": [
+        98,
+        95,
+        81,
+        45,
+        51,
+        60
+      ]
+    },
+    {
+      "method": "Playful / RATS",
+      "success_rate": [
+        61,
+        63,
+        43,
+        36,
+        29,
+        31
+      ]
+    },
+    {
+      "method": "META-Robot (DeepSeek-V4-Flash)",
+      "success_rate": [
+        98,
+        88.6,
+        72.2,
+        64.6,
+        83,
+        88.4
+      ]
+    },
+    {
+      "method": "META-Robot (GPT-6 Astra)",
+      "success_rate": [
+        99.6,
+        99,
+        85.8,
+        69.8,
+        89.25,
+        95.8
+      ]
+    }
+  ],
+  "predicate_ablation": [
+    {
+      "split": "Object–Task",
+      "full": 99,
+      "without_predicates": 85
+    },
+    {
+      "split": "Object–Pos",
+      "full": 99.6,
+      "without_predicates": 91
+    },
+    {
+      "split": "Goal–Task",
+      "full": 69.8,
+      "without_predicates": 56
+    },
+    {
+      "split": "Goal–Pos",
+      "full": 85.8,
+      "without_predicates": 69
+    },
+    {
+      "split": "Spatial–Task",
+      "full": 95.8,
+      "without_predicates": 76
+    },
+    {
+      "split": "Spatial–Pos*",
+      "full": 89.25,
+      "without_predicates": 72
+    }
+  ],
+  "proprioception_ablation": {
+    "task": "Rigid thin-object grasping (separate simulation task)",
+    "with_proprioception": 78,
+    "without_proprioception": 50
+  }
+}

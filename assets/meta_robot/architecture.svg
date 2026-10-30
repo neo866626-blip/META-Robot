@@ -1,28 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
-<title id="title">META-Robot architecture</title><desc id="desc">Action-level predicate transitions couple self cognition with capability scaling through an evidence-grounded execution loop and shared predicate and skill libraries.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#172b3c"/></linearGradient><linearGradient id="accent"><stop stop-color="#66e2ca"/><stop offset="1" stop-color="#83b9fa"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#66e2ca" stroke-width="1.5"/></marker></defs>
-<rect width="1440" height="620" rx="24" fill="url(#bg)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="390" viewBox="0 0 1280 390" role="img" aria-labelledby="title desc">
+<title id="title">META-Robot: success supported by physical evidence</title>
+<desc id="desc">Torque, force and gripper feedback complement vision. Action predicates evaluate this evidence to verify contact, acquisition and the goal. Unknown or false conditions lead back to observation, repair and rechecking. Skills and predicates are retained together.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1422"/><stop offset="1" stop-color="#122b36"/></linearGradient>
+<linearGradient id="flow"><stop stop-color="#56dfc3"/><stop offset="1" stop-color="#8fbfff"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#5de3c5" stop-opacity=".16"/><stop offset="1" stop-color="#5de3c5" stop-opacity="0"/></radialGradient>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="m1 1 4 3-4 3" fill="none" stroke="#71e7cd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="return" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="m1 1 4 3-4 3" fill="none" stroke="#b1c1ce" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="1280" height="390" rx="24" fill="url(#bg)"/>
+<circle cx="1091" cy="205" r="170" fill="url(#glow)"/>
 <g font-family="Arial,Helvetica,sans-serif">
-<text x="72" y="63" fill="#66e2ca" font-size="15" letter-spacing="4">EVIDENCE-GROUNDED ROBOTIC AGENTS</text>
-<text x="72" y="137" fill="#f0f6fc" font-size="64" font-weight="700">META-Robot</text>
-<text x="72" y="178" fill="#b8c9db" font-size="23">Self Cognition and Capability Scaling in Agentic Robots</text>
-<rect x="72" y="219" width="397" height="105" rx="14" fill="#152a38" stroke="#35605f"/>
-<text x="97" y="252" fill="#66e2ca" font-size="15" letter-spacing="1.5">SELF COGNITION</text><text x="97" y="287" fill="#eef4fc" font-size="21">What evidence supports success?</text>
-<rect x="493" y="219" width="397" height="105" rx="14" fill="#192b43" stroke="#375775"/>
-<text x="518" y="252" fill="#8fc0ff" font-size="15" letter-spacing="1.5">CAPABILITY SCALING</text><text x="518" y="287" fill="#eef4fc" font-size="21">Which skill should change?</text>
-<rect x="930" y="72" width="438" height="252" rx="18" fill="#0b1724" stroke="#35485b"/>
-<text x="958" y="109" fill="#c8d8e6" font-size="15" letter-spacing="1.4">COUPLED LIBRARIES</text>
-<rect x="958" y="133" width="172" height="64" rx="11" fill="#21483f"/><text x="1044" y="172" text-anchor="middle" fill="#9af2db" font-size="22">Predicates</text>
-<path d="M1145 164H1179M1145 164l8-5M1145 164l8 5M1179 164l-8-5M1179 164l-8 5" stroke="#7ca6b0" stroke-width="2"/>
-<rect x="1194" y="133" width="145" height="64" rx="11" fill="#253c59"/><text x="1267" y="172" text-anchor="middle" fill="#b9d7ff" font-size="22">Skills</text>
-<text x="958" y="232" fill="#acbfd1" font-size="17">Shared identity · inherited criteria</text>
-<text x="958" y="263" fill="#acbfd1" font-size="17">Reviewed admission · revisioned evidence</text>
-<text x="958" y="294" fill="#acbfd1" font-size="17">Vision + proprioceptive feedback</text>
-<path d="M72 358H1368" stroke="#334455"/>
-<text x="72" y="393" fill="#97adbf" font-size="14" letter-spacing="2.2">ACTION-LEVEL EXECUTION LOOP</text>
-<g fill="#152839" stroke="#385367"><rect x="72" y="416" width="275" height="98" rx="13"/><rect x="413" y="416" width="275" height="98" rx="13"/><rect x="754" y="416" width="275" height="98" rx="13"/><rect x="1095" y="416" width="273" height="98" rx="13"/></g>
-<g fill="#ecf4fd" font-size="23" text-anchor="middle"><text x="209" y="453">Evaluate before</text><text x="550" y="453">Execute &amp; observe</text><text x="891" y="453">Evaluate after</text><text x="1231" y="453">Repair &amp; validate</text></g>
-<g fill="#9db7c9" font-size="16" text-anchor="middle"><text x="209" y="485">Preconditions + invariants</text><text x="550" y="485">Action-aligned physical evidence</text><text x="891" y="485">Predicate state transitions</text><text x="1231" y="485">Bounded local refinement</text></g>
-<g stroke="#66e2ca" stroke-width="2" marker-end="url(#arrow)"><path d="M361 463H397"/><path d="M702 463H738"/><path d="M1043 463H1079"/></g>
-<text x="72" y="567" fill="#83a2b6" font-size="17">Unknown evidence requests observation. Contact alone does not establish a verified grasp.</text>
+<text x="48" y="43" font-size="16" letter-spacing="2.7" font-weight="700" fill="#70e8cf">META-ROBOT</text>
+<text x="48" y="87" font-size="31" font-weight="700" fill="#f1f7fc">How does the robot know it succeeded?</text>
+<rect x="1018" y="25" width="214" height="32" rx="16" fill="#172f3e" stroke="#34515d"/>
+<text x="1125" y="46" text-anchor="middle" font-size="15" fill="#b8d2e1">Skills &#8596; Predicates</text>
+<rect x="48" y="132" width="374" height="158" rx="22" fill="#152e3b"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M76 261h91m-72 0v-21l22-30-15-36 24-18 25 31-15 34" stroke="#a7bfd2" stroke-width="9"/>
+<path d="m136 221-8 17m8-17 11 15" stroke="#70e8cf" stroke-width="5"/>
+<circle cx="117" cy="210" r="8" fill="#152e3b" stroke="#70e8cf" stroke-width="3"/>
+<circle cx="151" cy="187" r="7" fill="#152e3b" stroke="#a7bfd2" stroke-width="3"/>
+<path d="M132 254v-8h16v8" stroke="#70e8cf" stroke-width="2"/>
+</g>
+<text x="190" y="171" font-size="23" font-weight="700" fill="#f1f7fc">Proprioception</text>
+<text x="190" y="201" font-size="18" fill="#70e8cf">Torque &#183; force &#183; gripper</text>
+<path d="M191 228h19l6-9 8 20 10-27 9 16h39l6-8 8 17 8-9h75" fill="none" stroke="#70e8cf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="190" y="266" font-size="17" fill="#a4bacb">+ visual observations</text>
+<path d="M437 211c28-19 47-19 75 0" fill="none" stroke="url(#flow)" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="467" cy="197" r="4" fill="#70e8cf"/>
+<rect x="530" y="132" width="306" height="158" rx="22" fill="#172f43"/>
+<text x="558" y="171" font-size="23" font-weight="700" fill="#f1f7fc">Action predicates</text>
+<g font-size="17" fill="#c0d7e8"><text x="558" y="207">Contact established</text><text x="558" y="237">Grasp verified</text><text x="558" y="267">Goal satisfied</text></g>
+<g fill="none" stroke="#70e8cf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m788 200 5 5 10-11m-15 36 5 5 10-11m-15 36 5 5 10-11"/></g>
+<path d="M851 211c35 19 59 19 94 0" fill="none" stroke="url(#flow)" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="896" cy="225" r="4" fill="#90c4fc"/>
+<circle cx="1090" cy="199" r="49" fill="#163f3b" stroke="#70e8cf" stroke-width="2"/>
+<circle cx="1090" cy="199" r="60" fill="none" stroke="#70e8cf" stroke-opacity=".25" stroke-dasharray="3 9"/>
+<path d="m1070 199 14 14 27-30" fill="none" stroke="#8cf4d9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1090" y="288" text-anchor="middle" font-size="25" font-weight="700" fill="#b0f3df">Verified success</text>
+<path d="M684 301v8c0 17-16 25-34 25H261c-19 0-26-9-26-26v-5" fill="none" stroke="#8ca5b7" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="5 6" marker-end="url(#return)"/>
+<rect x="298" y="320" width="323" height="27" rx="13" fill="#102431"/>
+<text x="460" y="339" text-anchor="middle" font-size="15" fill="#b6cad7">Uncertain? Observe &#8594; repair &#8594; recheck</text>
+<text x="1090" y="324" text-anchor="middle" font-size="16" fill="#a0bdc7">Backed by physical evidence</text>
 </g></svg>

@@ -10,11 +10,11 @@
 [![Python](https://img.shields.io/badge/Core-Python%203.10%2B-3776AB)](pyproject.toml)
 [![License](https://img.shields.io/badge/Code-Apache%202.0-blue)](LICENSE)
 
-[Overview](#overview) · [Real-Robot Demos](#real-robot-demos) · [Quick Start](#quick-start) · [Predicate Library](docs/predicate-library.md) · [中文](README.zh-CN.md)
+[Overview](#overview) · [Simulation Results](#simulation-results) · [Real-Robot Demos](#real-robot-demos) · [Quick Start](#quick-start) · [Predicate Library](docs/predicate-library.md) · [中文](README.zh-CN.md)
 
 </div>
 
-<p align="center"><img src="assets/meta_robot/architecture.svg" width="100%" alt="META-Robot execution loop and coupled predicate and skill libraries"></p>
+<p align="center"><img src="assets/meta_robot/architecture.svg" width="100%" alt="Proprioceptive feedback and vision support action predicates, which verify success"></p>
 
 ## Overview
 
@@ -25,6 +25,50 @@ The framework brings together three components:
 - **Predicate-guided execution.** Evaluate preconditions, postconditions and invariants at explicit action boundaries. Keep contact, gripper closure and verified acquisition distinct. Missing or stale evidence remains unknown and requests observation.
 - **Coupled predicate and skill libraries.** Share predicates across skills, inherit criteria through parent–child specialization, retrieve the most specific applicable skill with available feedback, and admit reviewed updates as immutable snapshots.
 - **Proprioceptive evidence.** Register task-relevant vision, joint, force, torque or gripper feedback through explicit adapters. Resolve temporal conditions from sufficiently covered signal windows.
+
+## Simulation Results
+
+**LIBERO-Pro success rate (%) ↑.** Results reported in the META-Robot manuscript, Table 1, over 50 evaluation seeds.
+
+| Method | Object–Pos | Object–Task | Goal–Pos | Goal–Task | Spatial–Pos* | Spatial–Task |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| OpenVLA | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| π₀ | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| π₀.₅ | 17.00 | 1.00 | 38.00 | 0.00 | 20.00 | 1.00 |
+| CaP-Agent0 | 22.00 | 18.00 | 26.00 | 17.00 | 12.00 | 14.00 |
+| ASPIRE | 98.00 | 95.00 | 81.00 | 45.00 | 51.00 | 60.00 |
+| Playful / RATS | 61.00 | 63.00 | 43.00 | 36.00 | 29.00 | 31.00 |
+| META-Robot (DeepSeek-V4-Flash) | 98.00 | 88.60 | 72.20 | 64.60 | 83.00 | 88.40 |
+| **META-Robot (GPT-6 Astra)** | **99.60** | **99.00** | **85.80** | **69.80** | **89.25** | **95.80** |
+
+Pos = position perturbations; Task = task perturbations. **\* Spatial–Pos:** the full-system result covers 8 tasks; interpret comparisons with this coverage difference in mind.
+
+<details>
+<summary><b>What do predicates and proprioception contribute?</b></summary>
+
+**Action-level predicates — manuscript Table 2.**
+
+| Split | Full META-Robot | Without predicates |
+| :--- | ---: | ---: |
+| Object–Task | **99.00** | 85.00 |
+| Object–Pos | **99.60** | 91.00 |
+| Goal–Task | **69.80** | 56.00 |
+| Goal–Pos | **85.80** | 69.00 |
+| Spatial–Task | **95.80** | 76.00 |
+| Spatial–Pos* | **89.25** | 72.00 |
+
+**Proprioceptive evidence — a separate rigid thin-object grasping simulation (§4.5.2, Fig. 11).**
+
+| Feedback | Success rate (%) |
+| :--- | ---: |
+| Without proprioception | 50.00 |
+| With proprioception | **78.00** |
+
+The proprioception experiment is separate from the six LIBERO-Pro splits above. The Spatial–Pos coverage note also applies to the predicate ablation.
+
+</details>
+
+Source: author-supplied META-Robot manuscript, Table 1 (p. 7), Table 2 and §4.5.2 (p. 9). [Data and provenance](assets/meta_robot/simulation-results.json). These are reported paper results; this homepage update does not rerun the benchmarks.
 
 ## Real-Robot Demos
 
